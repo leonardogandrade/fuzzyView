@@ -56,5 +56,3 @@ async def image_info(file: UploadFile = File(...)):
     s3.write(os.path.join(PREDICTIONS, filename))
     
     return JSONResponse(content=imageData, status_code=status.HTTP_200_OK)
-        
-    
